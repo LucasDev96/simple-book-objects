@@ -9,6 +9,10 @@ class Book {
     }
 }
 
+const book1 = new Book("egg", "eggerton", 314, true);
+const book2 = new Book("eggsalad", "eggies", 845, false);
+const book3 = new Book("bookname", "book writer", 123, true);
+
 function addBookToLibrary() {
     // take data from some sort of prompt and store in vars
     // give error if all fields aren't filled out
