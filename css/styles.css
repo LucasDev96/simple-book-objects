@@ -1,14 +1,16 @@
 body {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    justify-items: center;
+    align-content: center;
 }
 
 header {
-    height: 1fr;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
 }
 
 h1 {
@@ -17,13 +19,20 @@ h1 {
     font-size: 100px;
 }
 
-#columnHeadings {
+main {
     width: 100%;
     height: 3fr;
+    align-self: flex-start;
+}
+
+#columnHeadings {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    align-self: center;
 }
 
 h3 {
